@@ -1,6 +1,6 @@
 import os
 
-from flask import Flask
+from flask import Flask, render_template, url_for
 
 
 def create_app(test_config=None):
@@ -35,9 +35,8 @@ def create_app(test_config=None):
     app.add_url_rule('/', endpoint='index')
 
     # a simple page that says hello
-    @app.route('/hello')
-    def hello():
-        return 'Hello, World!'
+    @app.route('/')
+    def home_page():
+        return render_template("home/index.html")
 
     return app
-
