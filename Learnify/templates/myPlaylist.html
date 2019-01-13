@@ -5,14 +5,9 @@
  <h1> {%block title %} Topics {% endblock %} </h1>
  {% endblock %}
  
- 
- 
- 
  {% block content %}
- <ul>
-  {% for url in urls %}
-	<li> {% url %} </li>
-</ul>
+
+ {%extends 'linksHelper'.html' %}
 <button type="button">Click on your mysterious reading for the day</button>
 
 
