@@ -1,0 +1,233 @@
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN";
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+
+/* -----Top part of website ------ */
+.top-wrapper {
+  padding: 180px 0 100px 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/res/clement-h-544786-unsplash%20(1).jpg");
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+.top-wrapper contaienr {
+    
+}
+
+.top-wrapper h1 {
+  opacity: 0.7;
+  font-size: 45px;
+  letter-spacing: 5px;
+}
+
+.top-wrapper p {
+  opacity: 0.7;
+}
+
+.btn-wrapper {
+  margin: 20px 0;
+}
+
+.btn-wrapper p {
+  margin: 10px 0;
+}
+
+.signup {
+  background-color: #239b76;
+}
+
+.facebook {
+  background-color: #3b5998;
+  margin-right: 10px;
+}
+
+.google {
+  background-color: #ea4335;
+}
+
+
+.btn {
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.fa {
+  margin-right: 5px;
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);
+  /* positionプロパティをfixedに、topを0に指定してください */
+  position:fixed;
+  top:0px;
+  
+  /* z-indexを10に指定してください */
+  z-index:10;
+}
+
+.logo {
+  width: 124px;
+  margin-top: 20px;
+  color: white;
+    font-size: 40px;
+}
+
+
+.header-left {
+  float: left;
+}
+
+.header-right {
+  float: right;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.5s;
+}
+
+.header-right:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+}
+
+/* ----- feature part of the website with icons ------- */
+
+.feature-wrapper {
+  height: 500px;
+  padding-bottom: 80px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.heading {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  color: #5f5d60;
+}
+
+.heading h2 {
+  font-weight: normal;
+}
+
+.feature-wrapper h2 {
+    font-size: 150%;
+}
+
+
+.feature-icon {
+    float:left;
+    width: 33.33%;
+}
+
+.feature-icon i {
+    font-size: 120px;
+    margin-top: 25px;
+}
+
+.txt-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 30px;
+  font-size: 15px;
+  color: black;
+}
+
+/* -------- displaying a sample playlist here ------- */
+
+.playlist-sample {
+  height: 500px;
+  padding-bottom: 80px;
+  background-color: white;
+  text-align: center;
+}
+
+.card {
+    text-align: left;
+}
+
+
+/* -------- bottom part of website for sign up -------- */
+
+.heading h3 {
+  font-weight: normal;
+}
+
+.message-wrapper {
+  border-bottom: 1px solid #eee;
+  background-color: #F4F4F4;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+
+.message {
+  padding: 15px 40px;
+  background-color: #239b76;
+  cursor: pointer;
+  box-shadow: 0 7px #1a7940;
+}
+
+.message:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+.btn-primary {
+    background-color: #1C2424;
+}
+
+.card-header {
+    color: white;
+    background-color: #1C2424;
+    opacity: 0.9;
+}
+
+.card-text {
+    font-weight: 300;
+}
+
+/* ------ footer -------*/
+
+footer a {
+  width: 125px;
+}
+
+.footer-logo {
+    color:black;
+    font-size: 20px;
+}
+footer p {
+  color: black;
+  font-size: 12px;
+}
+
+footer {
+  padding-top: 30px;
+}
