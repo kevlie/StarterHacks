@@ -17,14 +17,14 @@ a {
 /* -----Top part of website ------ */
 .top-wrapper {
   padding: 180px 0 100px 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/res/clement-h-544786-unsplash%20(1).jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/Learnify/static/image/home.png");
   background-size: cover;
   color: white;
   text-align: center;
 }
 
-.top-wrapper contaienr {
-    
+.top-wrapper container {
+
 }
 
 .top-wrapper h1 {
@@ -83,7 +83,7 @@ header {
   /* positionプロパティをfixedに、topを0に指定してください */
   position:fixed;
   top:0px;
-  
+
   /* z-indexを10に指定してください */
   z-index:10;
 }
@@ -258,7 +258,7 @@ footer a {
 footer p {
   color: black;
   font-size: 12px;
-    
+
 }
 
 footer {

@@ -8,7 +8,7 @@ from Learnify.db import get_db
 
 from scraper import return_link
 
-bp = Blueprint('index', __name__)
+bp = Blueprint('main', __name__)
 
 def create():
 
@@ -20,7 +20,7 @@ def index():
 
     links = ["hello.com", "bye.org"]
 
-    return render_template('index.html', links=links)
+    return render_template('mainpage.html', links=links)
 
 
 @bp.route('/', methods=('GET',))
@@ -40,4 +40,4 @@ def search_sites():
         # db = get_db()
         link = return_link(query)
 
-    return render_template('index.html', link=link)
+    return render_template('mainpage.html', link=link)
