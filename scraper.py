@@ -32,6 +32,7 @@ def return_link(topic) -> str:
         # links=links.find('a', class_='button u-baseColor--buttonNormal')
         links = links.a['href']
         num += 1
+
         if num == randomNum:
             ret = links
 

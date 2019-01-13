@@ -23,15 +23,15 @@ def index():
     return render_template('index.html', links=links)
 
 
-@bp.route('/search', methods=('GET',))
+@bp.route('/', methods=('GET',))
 @login_required
 def search_sites():
-    query = request.form
+    query = request.form.get('temp')
     error = None
-    link = None
+    link = "if you see this, Link is none"
 
     if not query:
-        error = "enter something"
+        error = "cannot read from form"
 
     if error is not None:
         flash(error)
