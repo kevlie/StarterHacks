@@ -37,7 +37,7 @@ def register():
 
         flash(error)
 
-    return render_template('auth/register.html')
+    return render_template('auth/templates/register.html')
 
 @bp.route('/login', methods=('GET', 'POST'))
 def login():
@@ -62,7 +62,7 @@ def login():
 
         flash(error)
 
-    return render_template('auth/login.html')
+    return render_template('auth/templates/login.html')
 
 
 @bp.before_app_request

@@ -2,13 +2,14 @@ import os
 
 from flask import Flask, render_template, url_for
 from flask_sqlalchemy import SQLAlchemy
+from Learnify.forms import RegistrationForm, LoginForm
 
 def create_app(test_config=None):
     # create and configure the app
     app = Flask(__name__, instance_relative_config=True)
 
     # Setting up database for playlists.
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
+    app.config['SECRET_KEY'] = '52bb1d96c13547504affb4c678ffc625'
     p_db = SQLAlchemy(app)
 
     app.config.from_mapping(
@@ -56,5 +57,14 @@ def create_app(test_config=None):
     def find_page():
         return render_template("find.html")
 
+    @app.route('/register')
+    def register():
+        form = RegistrationForm()
+        return render_template("register.html", title="Register", form=form)
+
+    @app.route('/login')
+    def login():
+        form = LoginForm()
+        return render_template("login.html", title="Login", form=form)
 
     return app

@@ -1,7 +1,6 @@
 from datetime import datetime
 from Learnify import p_db
 
-
 class User(p_db.Model):
     user_id = p_db.Column(p_db.Integer, primary_key=True)
     username = p_db.Column(p_db.String(20), unique=True, nullable=False)
