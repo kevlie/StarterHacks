@@ -1,0 +1,22 @@
+Html:
+
+
+<form id="infoForm" method="GET">
+
+<!-- the dropdown menu -->
+
+<button type="submit" class="btn btn-primary"> Submit </button>
+<form>
+
+
+
+Javascript:
+
+
+/*document.getElementById("infoForm").addEventListener('submit', saveFormInfo);
+
+function saveFormInfo(){
+
+
+}
+*/
