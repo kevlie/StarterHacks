@@ -1,11 +1,16 @@
 import os
 
 from flask import Flask, render_template, url_for
-
+from flask_sqlalchemy import SQLAlchemy
 
 def create_app(test_config=None):
     # create and configure the app
-    app = Flask(__name__)
+    app = Flask(__name__, instance_relative_config=True)
+
+    # Setting up database for playlists.
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
+    p_db = SQLAlchemy(app)
+
     app.config.from_mapping(
         SECRET_KEY='dev',
         DATABASE=os.path.join(app.instance_path, 'flaskr.sqlite'),
@@ -37,10 +42,6 @@ def create_app(test_config=None):
     # a simple page that says hello
     @app.route('/')
     def home_page():
-        return render_template("mainpage.html")
-
-    @app.route('/about')
-    def about_page():
-        return render_template("about.html")
+        return render_template("home/index.html")
 
     return app
