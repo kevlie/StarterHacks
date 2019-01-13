@@ -75,6 +75,7 @@ a {
   margin-right: 5px;
 }
 
+/* ----- header -----*/
 header {
   height: 65px;
   width: 100%;
@@ -91,12 +92,29 @@ header {
   width: 124px;
   margin-top: 20px;
   color: white;
-    font-size: 40px;
+  font-size: 40px;
+}
+
+.logo:hover {
+    opacity: 0.9;
+    color: white;
 }
 
 
 .header-left {
   float: left;
+}
+
+.header-contents a {
+    color: white;
+    line-height: 65px;
+    padding-top: 0 20px;
+    margin-left: 170px;
+    display: block;
+}
+
+.header-contents {
+    float:left;
 }
 
 .header-right {
