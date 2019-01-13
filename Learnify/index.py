@@ -23,10 +23,10 @@ def index():
     return render_template('index.html', links=links)
 
 
-@bp.route('/search', methods=('GET',))
+@bp.route('/', methods=['POST'])
 @login_required
 def search_sites():
-    query = request.form
+    query = request.form['text']
     error = None
     link = None
 
