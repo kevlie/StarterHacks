@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN";
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+
+/* ----- Heading stuff -----------*/
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);
+  /* positionプロパティをfixedに、topを0に指定してください */
+  position:fixed;
+  top:0px;
+
+  /* z-indexを10に指定してください */
+  z-index:10;
+}
+
+.logo {
+  width: 124px;
+  margin-top: 20px;
+  color: white;
+  font-size: 40px;
+}
+
+.logo:hover {
+    opacity: 0.8;
+    color: white;
+}
+
+
+.header-left {
+  float: left;
+}
+
+.header-contents a {
+    color: white;
+    line-height: 65px;
+    padding-top: 0 20px;
+    margin-left: 170px;
+    display: block;
+}
+
+.header-contents {
+    float:left;
+}
+
+.header-right {
+  float: right;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.5s;
+}
+
+.header-right:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+}
+
+
+/* ------ footer -------*/
+
+footer a {
+  width: 125px;
+}
+
+.footer-logo {
+    color:black;
+    font-size: 20px;
+}
+
+.footer-logo:hover {
+    color:black;
+    opacity: 0.6;
+    transition: 0.2s;
+}
+
+footer p {
+  color: black;
+  font-size: 12px;
+
+}
+
+footer {
+  
+}
+
+

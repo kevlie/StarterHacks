@@ -48,4 +48,13 @@ def create_app(test_config=None):
     def about_page():
         return render_template("about.html")
 
+    @app.route('/create')
+    def create_page():
+        return render_template("create.html")
+
+    @app.route('/find')
+    def find_page():
+        return render_template("find.html")
+
+
     return app
